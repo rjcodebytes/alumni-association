@@ -2,12 +2,11 @@ import React from 'react'
 import Image from 'next/image'
 import logo from "../../public/logo.png"
 import Link from 'next/link'
-import { Roboto } from 'next/font/google'
+import { Poppins } from 'next/font/google'
  
-const roboto = Roboto({
-  weight: '400',
-  subsets: ['latin'],
-  display: 'swap',
+const poppins = Poppins({
+  weight: ['100','200','300','400','500','600','700','800','900'],
+  subsets:["latin"]
 })
  
 export default function Nav() {
@@ -16,7 +15,7 @@ export default function Nav() {
         <div className="logo w-[115px] h-[62px]">
            <Link href=""><Image src={logo} /></Link>
         </div>
-        <Link href={""} className={`bg-[#6E76E5] text-white w-24 h-9 p-2 flex justify-center items-center rounded-[40px] ${roboto.className}`}>Join</Link>
+        <Link href={""} className={`bg-[#6E76E5] text-white w-24 h-9 p-2 flex justify-center items-center rounded-[40px] font-bold ${poppins.className}`}>Join</Link>
         
     </nav>
   )
