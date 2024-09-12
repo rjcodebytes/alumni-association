@@ -8,7 +8,7 @@ export default function Nav() {
         <div className="logo w-[115px] h-[62px]">
            <Link href=""><Image src={logo} /></Link>
         </div>
-        <Link>Join</Link>
+        <Link href={""}>Join</Link>
     </nav>
   )
 }
