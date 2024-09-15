@@ -1,8 +1,6 @@
 import React from 'react'
 import { Poppins } from 'next/font/google'
-import GroupImg from "../../../public/group.png"
-import GroupImg2 from "../../../public/group2.png"
-import GroupImg3 from "../../../public/group3.png"
+import LandImg from "../../../public/group3.png"
 import Image from 'next/image'
 const poppins = Poppins({
     weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
@@ -24,7 +22,7 @@ export default function Comp1() {
                         </div>
                     </div>
                    <div className=''>
-                    <Image src={GroupImg3} width={700}></Image>
+                    <Image src={LandImg} width={700}></Image>
                    </div>
                 </div>
             </div>
