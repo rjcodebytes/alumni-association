@@ -1,6 +1,8 @@
 import React from 'react'
 import { Poppins } from 'next/font/google'
-
+import GroupImg from "../../../public/group.png"
+import GroupImg2 from "../../../public/group2.png"
+import Image from 'next/image'
 const poppins = Poppins({
     weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
     subsets: ["latin"]
@@ -9,12 +11,20 @@ export default function Comp1() {
     return (
         <div className='w-full mx-auto flex flex-col '>
             <div className='mx-auto lg:mx-0 items-start px-1 lg:px-11 py-2 lg:py-6'>
-                <div className='w-full text-gray-400'>
-                    <p className={`${poppins.className} text-[31px] md:text-[60px] lg:text-[60px] font-semibold`}>Reunite,Engage,</p>
-                </div>
-                <div className='flex justify-start items-center w-full text-gray-400'>
-                    <p className={`${poppins.className} text-[31px] md:text-[60px] lg:text-[60px] font-semibold`}>Excel,</p>
-                    <p className={`${poppins.className} text-[31px] md:text-[60px] lg:text-[60px] font-semibold bg-gradient-to-r text-transparent from-[#2629B4] to-[#AA27AA] bg-clip-text`}>Together</p>
+                <div className='flex justify-around items-center'>
+                    <div className='h-full'>
+                        <div className='w-full text-gray-400'>
+                            <p className={`${poppins.className} text-[31px] md:text-[80px] lg:text-[80px] font-semibold`}>Reunite,</p>
+                            <p className={`${poppins.className} text-[31px] md:text-[80px] lg:text-[80px] font-semibold`}>Engage,</p>
+                        </div>
+                        <div className='justify-start items-center w-full text-gray-400'>
+                            <p className={`${poppins.className} text-[31px] md:text-[80px] lg:text-[80px] font-semibold`}>Excel,</p>
+                            <p className={`${poppins.className} text-[31px] md:text-[80px] lg:text-[80px] font-semibold bg-gradient-to-r text-transparent from-[#2629B4] to-[#AA27AA] bg-clip-text`}>Together</p>
+                        </div>
+                    </div>
+                    <div>
+                        <Image src={GroupImg}></Image>
+                    </div>
                 </div>
             </div>
             <div className='py-3 mx-auto w-full h-fit flex-col lg:flex-row md:flex-row shadow-lg md:h-[150px] md:w-[1000px] lg:h-[150px] lg:w-[1000px] rounded-[30px] bg-[#FBF9F9] flex justify-around items-center'>
