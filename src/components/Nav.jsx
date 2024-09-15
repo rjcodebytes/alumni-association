@@ -15,7 +15,7 @@ export default function Nav() {
         <div className="logo w-[115px] h-[62px]">
            <Link href=""><Image src={logo} /></Link>
         </div>
-        <Link href={""} className={`bg-[#6E76E5] text-white w-24 h-9 p-2 flex justify-center items-center rounded-[40px] font-bold ${poppins.className}`}>Join</Link>
+        <Link href={""} className={`bg-[#6E76E5] text-white w-28 h-9 p-2 flex justify-center items-center rounded-[40px] font-bold hover:shadow-md hover:bg-[#6369c6] hover:animate-in hover:animate-out hover:transition-all hover ${poppins.className}`}>Join Now</Link>
         
     </nav>
   )
