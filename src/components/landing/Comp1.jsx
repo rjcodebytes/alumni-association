@@ -22,7 +22,7 @@ export default function Comp1() {
                         </div>
                     </div>
                    <div className=''>
-                    <Image src={LandImg} width={700}></Image>
+                    <Image src={LandImg} className='' width={700}></Image>
                    </div>
                 </div>
             </div>
