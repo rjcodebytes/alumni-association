@@ -11,7 +11,7 @@ const poppins = Poppins({
 export default function Comp1() {
     return (
         <div className='mx-auto flex flex-col '>
-            <div className='items-start md:px-8 lg:px-8 py-2 lg:py-6'>
+            <div className='items-center md:px-8 lg:px-8 py-2 lg:py-6'>
                 <div className='flex justify-around items-center'>
                     <div className='h-full'>
                         <div className='w-full text-gray-400'>
